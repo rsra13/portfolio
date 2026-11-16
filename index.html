@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raul Ramirez · Strategy &amp; Operations Leader</title>
-<meta name="description" content="Raul Ramirez: strategy and operations leader in San Jose, CA. 20+ years in technology, $50M+ portfolio governance, custom AI agents built in Microsoft Copilot Studio.">
+<meta name="description" content="Raul Ramirez: strategy and operations leader in San Jose, CA. 20+ years in technology, $50M+ portfolio governance, M&A integration, custom AI agents built in Microsoft Copilot Studio.">
 <meta property="og:title" content="Raul Ramirez · Strategy & Operations Leader">
-<meta property="og:description" content="Strategy into operating rhythm. Busywork into AI agents. Selected work, AI practice, and career path.">
+<meta property="og:description" content="Architecting operating models, leading M&A integration, and engineering AI-native workflows. Selected work, AI practice, and career path.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#1E40AF">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E40AF'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23F8FAFC' text-anchor='middle'%3ERR%3C/text%3E%3C/svg%3E">
@@ -114,8 +114,9 @@ a:hover{color:var(--accent-deep)}
 .hero h1{
   font-family:var(--serif);font-weight:700;
   font-size:clamp(2.1rem, 4.6vw, 3.4rem);
-  line-height:1.15;letter-spacing:-.01em;max-width:21ch;margin-bottom:20px;
+  line-height:1.15;letter-spacing:-.01em;max-width:21ch;margin-bottom:16px;
 }
+.hero .tagline{font-weight:600;color:var(--accent-deep);font-size:1.02rem;margin:0 0 16px;max-width:60ch}
 .hero .lede{font-size:1.1rem;color:var(--muted);max-width:64ch;margin-bottom:30px}
 .hero .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
 .snapshot{display:flex;flex-wrap:wrap;gap:8px}
@@ -197,6 +198,11 @@ a:hover{color:var(--accent-deep)}
   color:var(--accent-deep);margin-bottom:5px;
 }
 .case-block p{color:var(--muted);font-size:.94rem;max-width:72ch}
+.case-block ul{list-style:none;margin:10px 0 0;max-width:72ch;display:flex;flex-direction:column;gap:9px}
+.case-block li{position:relative;padding-left:18px;color:var(--muted);font-size:.94rem}
+.case-block li::before{content:"";position:absolute;left:2px;top:.5em;width:7px;height:7px;border-radius:2px;background:var(--accent)}
+.case-block li strong{color:var(--ink);font-weight:600}
+.case-block .flow{margin-top:16px;padding:20px}
 .case-stats{
   display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;max-width:560px;
 }
@@ -346,7 +352,7 @@ a:hover{color:var(--accent-deep)}
   font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
   color:var(--accent-deep);margin-bottom:16px;
 }
-.flow-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.flow-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
 .flow-step{
   position:relative;display:flex;align-items:center;gap:10px;text-align:left;
   font-family:var(--sans);background:var(--paper);border:1px solid var(--line);
@@ -418,6 +424,9 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
   .stat:nth-child(n+3){border-top:1px solid var(--line)}
   .toolbox{grid-template-columns:1fr}
   .case-body{padding-left:24px}
+  .flow-steps{grid-template-columns:1fr 1fr}
+  .flow-step::after{display:none}
+  .flow-step:not(:last-child)::after{display:none}
 }
 @media (max-width:640px){
   .nav a{display:none}
@@ -461,7 +470,6 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
       <a href="#stack">Stack</a>
       <a href="#path">Path</a>
       <a href="#contact">Contact</a>
-      
     </nav>
   </div>
 </header>
@@ -473,6 +481,8 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
   <div class="wrap">
     <p class="kicker">Raul Ramirez · San Jose, CA</p>
     <h1>I turn strategy into operating rhythm, and busywork into AI agents.</h1>
+    <p class="tagline">Architecting operating models, leading M&amp;A integration, and
+    engineering AI-native workflows.</p>
     <p class="lede">
       Strategy and operations leader with 20+ years in technology. Most recently
       chief of staff to the Managing Director of an 800-person delivery organization, running
@@ -481,7 +491,7 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
     </p>
     <div class="cta-row">
       <a class="btn" href="#work">See the work</a>
-      
+      <a class="btn-ghost" href="#ai">How I use AI</a>
     </div>
     <div class="snapshot">
       <span>Softtek · Manager, Strategy &amp; Business Operations · 2016-2026</span>
@@ -513,13 +523,161 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
 
     <div class="cases">
 
-      <!-- CASE 01: TMO -->
-      <article class="case open" id="case-tmo">
-        <button class="case-head" type="button" aria-expanded="true" aria-controls="panel-tmo">
+      <!-- CASE 01: executive partnership & strategic realignment -->
+      <article class="case open" id="case-plan">
+        <button class="case-head" type="button" aria-expanded="true" aria-controls="panel-plan">
           <span class="case-num" aria-hidden="true">01</span>
           <span class="case-title-group">
-            <span class="case-title">A Talent Management Office, built from zero</span>
-            <span class="case-teaser">Fulfillment was on fire. Now it is the vertical's operating model. <b>75% faster time-to-fill.</b></span>
+            <span class="case-title">From flat growth to double-digit expansion: pivoting strategy through focus</span>
+            <span class="case-teaser">Diagnosing failure, pivoting strategy, driving growth. <b>Double-digit growth two years running.</b></span>
+          </span>
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </button>
+        <div class="case-panel" id="panel-plan">
+          <div class="case-panel-inner">
+            <div class="case-body">
+              <div class="case-chips">
+                <span class="chip">Executive partnership</span>
+                <span class="chip">Strategic realignment</span>
+                <span class="chip">Operating rhythm</span>
+              </div>
+              <div class="case-block">
+                <h4>The situation</h4>
+                <p>In 2019, a global technology services firm realigned its High-Tech vertical
+                under new leadership. The opening strategy was breadth: cover every sub-segment
+                with every available offering, and the annual planning framework I designed
+                tracked trends across multiple industries at once. Execution was rigorous, and
+                the 2020 result was still flat revenue growth. The data exposed the root cause:
+                resources spread too thin across divergent customer needs diluted sales
+                effectiveness and weakened the value proposition - present everywhere, dominant
+                nowhere.</p>
+              </div>
+              <div class="case-block">
+                <h4>What I did</h4>
+                <p>For the 2021 planning cycle, I partnered with the Managing Director to
+                diagnose the root cause and pivot the strategy from breadth to depth.</p>
+                <ul>
+                  <li><strong>Strategic diagnosis:</strong> led a cross-functional analysis
+                  across Sales, Marketing, and Solutions to identify which ideal client profiles
+                  (ICPs) actually yielded profitable, repeatable engagements - and which ones
+                  consumed capacity without return.</li>
+                  <li><strong>Model pivot:</strong> redesigned the operating plan around the
+                  focused ICPs, consolidating offerings, strengthening specialized sales and
+                  marketing teams for high-yield segments, and exiting low-margin pursuits.</li>
+                  <li><strong>Operating rhythm enforcement:</strong> implemented stricter
+                  governance forums (QBRs and MBRs) so the team stayed aligned to the new focus,
+                  with decision logs that forced explicit trade-offs whenever a request fell
+                  outside the defined ICPs. Time-to-decision on critical escalations fell 40%
+                  under the structured governance, and leadership gained 100% visibility into
+                  portfolio risks and financials through a single dashboard.</li>
+                  <li><strong>Executive advisory:</strong> served as the trusted thought partner
+                  to the MD, translating ambiguous market signals into clear, actionable
+                  priorities for the leadership team.</li>
+                </ul>
+              </div>
+              <div class="case-block">
+                <h4>The result</h4>
+                <ul>
+                  <li><strong>Revenue impact:</strong> double-digit revenue growth in the
+                  subsequent two years (2021-2022) by shifting from a scattered coverage model
+                  to a focused ICP strategy.</li>
+                  <li><strong>Market expansion:</strong> 30+ new logos secured during this
+                  period, validating the strength of the refined positioning.</li>
+                  <li><strong>Operational efficiency:</strong> wasted sales cycles reduced by
+                  eliminating non-ICP pursuits, letting delivery and solutions teams concentrate
+                  on high-value accounts.</li>
+                </ul>
+              </div>
+              <div class="case-stats">
+                <div class="case-stat"><b>Double-digit</b><span>revenue growth in 2021 and 2022, after a flat 2020</span></div>
+                <div class="case-stat"><b>30+ new logos</b><span>secured on the focused ICP strategy</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CASE 02: M&A integration & value realization -->
+      <article class="case" id="case-mna">
+        <button class="case-head" type="button" aria-expanded="false" aria-controls="panel-mna">
+          <span class="case-num" aria-hidden="true">02</span>
+          <span class="case-title-group">
+            <span class="case-title">Strategic vendor consolidation: driving 40% revenue growth through integration</span>
+            <span class="case-teaser">A sensitive integration, no formal authority over contributing teams. <b>40% revenue growth.</b></span>
+          </span>
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </button>
+        <div class="case-panel" id="panel-mna">
+          <div class="case-panel-inner">
+            <div class="case-body">
+              <div class="case-chips">
+                <span class="chip">M&amp;A integration</span>
+                <span class="chip">Value realization</span>
+                <span class="chip">Change management</span>
+              </div>
+              <div class="case-block">
+                <h4>The situation</h4>
+                <p>A major enterprise client ran a fragmented vendor landscape: redundant
+                costs, inconsistent service levels, and missed revenue opportunities.
+                Leadership chose consolidation to improve margins and client stickiness - but
+                previous attempts had failed on poor change management and no synergy tracking,
+                so this one had to be run differently from day one.</p>
+              </div>
+              <div class="case-block">
+                <h4>What I did</h4>
+                <p>I led the end-to-end integration strategy, moving beyond simple contract
+                termination to value realization.</p>
+                <ul>
+                  <li><strong>Due diligence &amp; modeling:</strong> conducted deep-dive
+                  analysis of every incumbent vendor and modeled the financial trade-offs,
+                  identifying synergies in pricing, SLAs, and technical capabilities, and
+                  assessing organizational risks including talent retention and client
+                  continuity.</li>
+                  <li><strong>Integration planning:</strong> developed a phased roadmap that
+                  balanced speed with stability, defined clear ownership for each workstream
+                  (Legal, Procurement, Delivery, Client Success), and established post-close
+                  governance to track benefits realization.</li>
+                  <li><strong>Change management:</strong> led stakeholder alignment across
+                  Sales, Finance, and Delivery, securing executive buy-in with a business case
+                  that tied vendor consolidation directly to margin improvement and client
+                  satisfaction scores.</li>
+                </ul>
+              </div>
+              <div class="case-block">
+                <h4>The result</h4>
+                <ul>
+                  <li><strong>Revenue impact:</strong> 40% revenue growth within the
+                  consolidated portfolio by upselling expanded service offerings enabled by the
+                  new vendor partners.</li>
+                  <li><strong>Cost efficiency:</strong> redundancy eliminated and gross margins
+                  improved significantly, with strict compliance standards maintained
+                  throughout.</li>
+                  <li><strong>Operational resilience:</strong> 50+ enterprise accounts migrated
+                  without service disruption, preserving client trust and retaining key delivery
+                  talent through the transition - all without formal authority over any
+                  contributing team.</li>
+                </ul>
+              </div>
+              <div class="case-stats">
+                <div class="case-stat"><b>40%</b><span>revenue growth through the integration</span></div>
+                <div class="case-stat"><b>50+ accounts</b><span>migrated without service disruption, key talent retained</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CASE 03: TMO, framed as defect reduction -->
+      <article class="case" id="case-tmo">
+        <button class="case-head" type="button" aria-expanded="false" aria-controls="panel-tmo">
+          <span class="case-num" aria-hidden="true">03</span>
+          <span class="case-title-group">
+            <span class="case-title">Building the engine: designing a centralized governance framework for resource allocation</span>
+            <span class="case-teaser">0-to-1 governance, defect reduction, operational scale. <b>75% faster time-to-fill.</b></span>
           </span>
           <span class="chev" aria-hidden="true">
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -530,26 +688,43 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
             <div class="case-body">
               <div class="case-chips">
                 <span class="chip">0-to-1 build</span>
-                <span class="chip">Governance</span>
+                <span class="chip">Defect reduction</span>
                 <span class="chip">Operating model</span>
               </div>
               <div class="case-block">
                 <h4>The situation</h4>
-                <p>Specialists were assigned to projects by whoever escalated loudest. Allocation
-                failures caused delivery delays, project attrition sat at 8%, and time-to-fill ran
-                two months across a 50+ account portfolio.</p>
+                <p>Specialists were assigned to projects reactively, often based on who
+                escalated loudest. The allocation failure caused delivery delays, project
+                attrition sat at 8%, and time-to-fill ran two months across a 50+ account
+                portfolio serving an 800-person organization.</p>
               </div>
               <div class="case-block">
                 <h4>What I did</h4>
                 <p>Designed and stood up the Talent Management Office as a 0-to-1 governance
-                framework: defined roles, decision rights, executive scorecards, and weekly
-                operating cadences. Then ran it until it was boring.</p>
+                framework, run as a defect-reduction program where every delay, misallocation,
+                and resignation was a defect to design out.</p>
+                <ul>
+                  <li><strong>Framework design:</strong> defined roles, decision rights,
+                  executive scorecards, and weekly operating cadences, replacing ad-hoc
+                  assignments with structured planning.</li>
+                  <li><strong>Process standardization:</strong> created a centralized intake
+                  process that matched specialist skills to project requirements before
+                  commitments were made.</li>
+                  <li><strong>Continuous improvement:</strong> monitored utilization rates and
+                  attrition drivers, iterating the model until it became routine - then ran it
+                  until it was boring.</li>
+                </ul>
               </div>
               <div class="case-block">
                 <h4>The result</h4>
-                <p>Time-to-fill fell from two months to under two weeks. Project attrition fell
-                from 8% to under 3%. The framework became the repeatable operating model for the
-                entire 800-person vertical.</p>
+                <ul>
+                  <li><strong>Speed:</strong> time-to-fill fell from two months to under two
+                  weeks, a 75% reduction.</li>
+                  <li><strong>Retention:</strong> project attrition fell from 8% to under 3%.</li>
+                  <li><strong>Scale:</strong> the framework became the repeatable operating
+                  model for the entire 800-person vertical, stabilizing delivery quality across
+                  all enterprise accounts.</li>
+                </ul>
               </div>
               <div class="case-stats">
                 <div class="case-stat"><b>2 months → under 2 weeks</b><span>time-to-fill, a 75% reduction</span></div>
@@ -560,13 +735,13 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
         </div>
       </article>
 
-      <!-- CASE 02: AI agents -->
+      <!-- CASE 04: AI-native operations -->
       <article class="case" id="case-ai">
         <button class="case-head" type="button" aria-expanded="false" aria-controls="panel-ai">
-          <span class="case-num" aria-hidden="true">02</span>
+          <span class="case-num" aria-hidden="true">04</span>
           <span class="case-title-group">
-            <span class="case-title">Custom AI agents that gave leadership time back</span>
-            <span class="case-teaser">Data pulls, synthesis, and status rollups moved to agents. <b>30% reporting overhead removed.</b></span>
+            <span class="case-title">Engineering intelligence: automating executive decision support with agentic workflows</span>
+            <span class="case-teaser">Hands-on building, automation, efficiency gains. <b>30% reporting overhead removed.</b></span>
           </span>
           <span class="chev" aria-hidden="true">
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -577,127 +752,64 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
             <div class="case-body">
               <div class="case-chips">
                 <span class="chip">Microsoft Copilot Studio</span>
-                <span class="chip">Executive reporting</span>
-                <span class="chip">Automation</span>
+                <span class="chip">Agentic workflows</span>
+                <span class="chip">Human-in-the-loop</span>
               </div>
               <div class="case-block">
                 <h4>The situation</h4>
-                <p>Recurring data pulls, market research synthesis, and status rollups consumed
-                days of leadership time every month, and the inputs arrived messy from every
-                direction of an 800-person matrixed organization.</p>
+                <p>Strategy and operations teams were spending 30-40% of their time manually
+                synthesizing data from disparate sources - CRM, ERP, and BI tools - to prepare
+                for QBRs and board meetings. Manual assembly slowed insight generation and
+                introduced human error into reporting accuracy. Leadership needed faster, more
+                reliable, data-driven decisions.</p>
               </div>
               <div class="case-block">
                 <h4>What I did</h4>
-                <p>Built and deployed custom AI agents in Microsoft Copilot Studio to automate
-                market research synthesis, executive reporting, and lightweight tracking of
-                priorities and decisions. AI became the default first step for problem-solving
-                before escalating to humans.</p>
+                <p>I architected and deployed custom AI agents in Microsoft Copilot Studio to
+                automate the data-to-insight pipeline. Proprietary code stays off this page, so
+                what follows is the system architecture and the workflow design around it - the
+                five-step pipeline below is the actual architecture, clickable step by step.</p>
+                <ul>
+                  <li><strong>Workflow design:</strong> built agents that ingested raw
+                  performance data, applied natural-language synthesis to summarize trends, and
+                  flagged anomalies based on predefined thresholds.</li>
+                  <li><strong>Human-in-the-loop validation:</strong> designed a review mechanism
+                  where AI-generated drafts were validated by subject-matter experts before
+                  distribution, ensuring zero-defect accuracy for executive audiences.</li>
+                  <li><strong>Integration:</strong> connected the AI outputs directly into the
+                  existing PowerPoint and Excel reporting frameworks, letting analysts focus on
+                  interpretation instead of assembly.</li>
+                </ul>
+                <div class="flow" aria-label="Architecture of the AI-assisted reporting workflow">
+                  <p class="flow-kicker">Architecture of the AI-assisted reporting workflow</p>
+                  <div class="flow-steps">
+                    <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">1</span><span class="flow-label">Data sources</span></button>
+                    <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">2</span><span class="flow-label">Agent ingestion</span></button>
+                    <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">3</span><span class="flow-label">Synthesis logic</span></button>
+                    <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">4</span><span class="flow-label">Human validation loop</span></button>
+                    <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">5</span><span class="flow-label">Executive dashboard</span></button>
+                  </div>
+                  <div class="flow-detail" aria-live="polite">
+                    <h4 id="flow-detail-title">1. Data sources</h4>
+                    <p id="flow-detail-text">Performance data lived across the CRM, ERP, BI dashboards, and status updates from every direction of an 800-person matrixed organization. This is where reporting time used to disappear.</p>
+                  </div>
+                </div>
               </div>
               <div class="case-block">
                 <h4>The result</h4>
-                <p>Reporting overhead dropped 30%. Quality stayed human by design: output
-                validation and quality control remained manual, so nothing agent-drafted moved
-                without a review pass.</p>
+                <ul>
+                  <li><strong>Efficiency gain:</strong> manual reporting overhead reduced by
+                  30%, freeing analyst hours for high-value strategic analysis.</li>
+                  <li><strong>Speed to insight:</strong> QBR preparation accelerated from two
+                  weeks to three days.</li>
+                  <li><strong>Scalability:</strong> a repeatable template for AI-assisted
+                  reporting that other verticals in the organization could adapt - a scalable
+                  approach to operational automation, with humans holding the pen on quality.</li>
+                </ul>
               </div>
               <div class="case-stats">
                 <div class="case-stat"><b>30% lower</b><span>reporting overhead after agents took over data pulls and synthesis</span></div>
-                <div class="case-stat"><b>100% human</b><span>validation and quality control on anything agent-drafted</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- CASE 03: operating cadence -->
-      <article class="case" id="case-plan">
-        <button class="case-head" type="button" aria-expanded="false" aria-controls="panel-plan">
-          <span class="case-num" aria-hidden="true">03</span>
-          <span class="case-title-group">
-            <span class="case-title">The operating rhythm behind a $50M+ portfolio</span>
-            <span class="case-teaser">Annual to quarterly to monthly, targets to tradeoffs. <b>98% forecast accuracy.</b></span>
-          </span>
-          <span class="chev" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </button>
-        <div class="case-panel" id="panel-plan">
-          <div class="case-panel-inner">
-            <div class="case-body">
-              <div class="case-chips">
-                <span class="chip">Annual planning</span>
-                <span class="chip">Portfolio governance</span>
-                <span class="chip">Forecasting</span>
-              </div>
-              <div class="case-block">
-                <h4>The situation</h4>
-                <p>The strategy was sound, but execution was episodic. Fifty-plus concurrent
-                engagements faced competing asks from Sales, Finance, Product, Engineering, and
-                HR, with no shared rhythm connecting the annual plan to what teams actually
-                did each month.</p>
-              </div>
-              <div class="case-block">
-                <h4>What I did</h4>
-                <p>Designed and ran the annual-to-quarterly-to-monthly planning cadence:
-                operating plans with Finance, portfolio reviews with Sales and Delivery leads,
-                execution checkpoints with ops teams. Set targets, tracked KPIs, flagged gaps,
-                and escalated tradeoffs to the Managing Director with prioritized
-                recommendations, on multi-year roadmaps aligning 50+ concurrent engagements.</p>
-              </div>
-              <div class="case-block">
-                <h4>The result</h4>
-                <p>The cadence became how the vertical runs. Revenue, demand, capacity, and
-                staffing forecast models hit 98% accuracy behind annual and multi-year
-                investment decisions, and escalations arrived as prioritized options instead
-                of fires.</p>
-              </div>
-              <div class="case-stats">
-                <div class="case-stat"><b>98%</b><span>forecast model accuracy behind annual and multi-year decisions</span></div>
-                <div class="case-stat"><b>50+</b><span>concurrent engagements aligned on shared multi-year roadmaps</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- CASE 04: mobilization -->
-      <article class="case" id="case-ramp">
-        <button class="case-head" type="button" aria-expanded="false" aria-controls="panel-ramp">
-          <span class="case-num" aria-hidden="true">04</span>
-          <span class="case-title-group">
-            <span class="case-title">100+ specialists mobilized in under two months</span>
-            <span class="case-teaser">A hard launch deadline and zero prior context on the stack. <b>100+ QA experts ramped.</b></span>
-          </span>
-          <span class="chev" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </button>
-        <div class="case-panel" id="panel-ramp">
-          <div class="case-panel-inner">
-            <div class="case-body">
-              <div class="case-chips">
-                <span class="chip">Rapid mobilization</span>
-                <span class="chip">QA delivery</span>
-                <span class="chip">Change management</span>
-              </div>
-              <div class="case-block">
-                <h4>The situation</h4>
-                <p>A global social media platform account faced a hard launch deadline, and the
-                delivery team started with zero prior context on the client's stack.</p>
-              </div>
-              <div class="case-block">
-                <h4>What I did</h4>
-                <p>Led the engagement under pressure: sourced, screened, onboarded, and ramped
-                100+ specialized QA experts in under two months, with the coordination and change
-                management a ramp of that size requires.</p>
-              </div>
-              <div class="case-block">
-                <h4>The result</h4>
-                <p>The specialized team was in place inside the two-month window the launch
-                demanded.</p>
-              </div>
-              <div class="case-stats">
-                <div class="case-stat"><b>100+</b><span>specialized QA experts sourced, onboarded, and ramped</span></div>
-                <div class="case-stat"><b>Under 2 months</b><span>from first screen to productive, against a hard deadline</span></div>
+                <div class="case-stat"><b>Two weeks → three days</b><span>QBR preparation cycle, human-validated throughout</span></div>
               </div>
             </div>
           </div>
@@ -716,7 +828,8 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
       <h2>Agents draft. Humans decide.</h2>
       <p>AI is the default first step for problem-solving on my teams. The assistant on the
       right is a playable model of the real reporting agents I built: it runs on a short,
-      verified script. Ask it something.</p>
+      verified script. Ask it something. The full agent architecture is diagrammed step by
+      step in Case 04 above.</p>
     </div>
 
     <div class="ai-grid">
@@ -761,6 +874,7 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
           <button class="chip-q" type="button">Did the AI make the decisions?</button>
           <button class="chip-q" type="button">What would you automate first?</button>
           <button class="chip-q" type="button">Tell me about the TMO build</button>
+          <button class="chip-q" type="button">Tell me about the M&amp;A integration</button>
           <button class="chip-q" type="button">How does annual planning actually run?</button>
         </div>
         <form class="agent-input-row" id="agent-form">
@@ -772,19 +886,6 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
       </div>
     </div>
 
-    <div class="flow" aria-label="How a task moves through the agent pipeline">
-      <p class="flow-kicker">The pipeline behind the 30%</p>
-      <div class="flow-steps">
-        <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">1</span><span class="flow-label">Messy inputs</span></button>
-        <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">2</span><span class="flow-label">Agent drafts</span></button>
-        <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">3</span><span class="flow-label">Human review</span></button>
-        <button class="flow-step" type="button" aria-pressed="false"><span class="flow-num" aria-hidden="true">4</span><span class="flow-label">Exec-ready</span></button>
-      </div>
-      <div class="flow-detail" aria-live="polite">
-        <h4 id="flow-detail-title">1. Messy inputs</h4>
-        <p id="flow-detail-text">Status updates, market research, data pulls, and shifting priorities arrive from every direction of an 800-person matrixed organization. This is where reporting time used to disappear.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -860,7 +961,8 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
         <p class="tl-org">Softtek · Director-level scope · Chief of Staff to the Managing Director</p>
         <p class="tl-desc">$50M+ portfolio, 50+ enterprise accounts, 800-person delivery
         organization. Built the annual-to-monthly planning cadence, the Talent Management
-        Office, and the custom AI agents that cut reporting overhead 30%.</p>
+        Office, and the custom AI agents that cut reporting overhead 30%. Led the M&amp;A
+        vendor consolidation that expanded the portfolio.</p>
         <div class="tl-more"><div class="tl-more-inner"><p>Also from this seat: annual
         quota-setting for the sales team, commission plan design with Finance and HR,
         quote-to-contract compliance and pricing governance, a $5M annual budget, 90%
@@ -909,12 +1011,11 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
 <footer id="contact">
   <div class="wrap">
     <h2>Let's talk</h2>
-    <p class="foot-lede">Strategy, operations, program, and transformation roles where AI is
-    part of how the work gets done. Based in San Jose, CA.</p>
+    <p class="foot-lede">Strategy and operations roles where operating models, M&amp;A
+    integration, and AI-native workflows are the day job. Based in San Jose, CA.</p>
     <div class="foot-cta">
       <a class="btn-invert" href="mailto:rsra13@icloud.com">rsra13@icloud.com</a>
       <a class="btn-outline-invert" href="https://www.linkedin.com/in/raulsramirez" target="_blank" rel="noopener">LinkedIn · /in/raulsramirez</a>
-      
     </div>
     <div class="foot-fine">
       <p>Client organizations are described generically to respect confidentiality. Every
@@ -992,14 +1093,16 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
 
   /* ---------- agent pipeline ---------- */
   var FLOW_STEPS = [
-    {label: "Messy inputs",
-     text: "Status updates, market research, data pulls, and shifting priorities arrive from every direction of an 800-person matrixed organization. This is where reporting time used to disappear."},
-    {label: "Agent drafts",
-     text: "Custom agents built in Microsoft Copilot Studio take the recurring jobs first: research synthesis, executive reporting drafts, and lightweight tracking of priorities and decisions."},
-    {label: "Human review",
-     text: "Validation and quality control stay manual by design. Nothing agent-drafted moves without a review pass, and decision logs record who owned every call."},
-    {label: "Exec-ready",
-     text: "Only reviewed output reaches leadership, held to SVP-level quality. The measured result of running this pipeline: reporting overhead down 30%."}
+    {label: "Data sources",
+     text: "Performance data lived across the CRM, ERP, BI dashboards, and status updates from every direction of an 800-person matrixed organization. This is where reporting time used to disappear."},
+    {label: "Agent ingestion",
+     text: "Custom agents built in Microsoft Copilot Studio ingested raw performance data, market research, and status updates on a fixed cadence. No more hand-collecting from five functions."},
+    {label: "Synthesis logic",
+     text: "Natural-language synthesis distilled trends and flagged anomalies against predefined thresholds, producing structured drafts instead of raw dumps."},
+    {label: "Human validation loop",
+     text: "Subject-matter experts reviewed every agent-drafted draft before distribution - a designed review pass, not a rubber stamp. Nothing moved without it, and decision logs recorded who owned each call."},
+    {label: "Executive dashboard",
+     text: "Validated output landed directly in the existing PowerPoint and Excel reporting frameworks. Measured result: reporting overhead down 30%, QBR preparation from two weeks to three days."}
   ];
   var flowBtns = document.querySelectorAll(".flow-step");
   var flowTitle = document.getElementById("flow-detail-title");
@@ -1023,19 +1126,21 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
     review: "Humans. Always. Validation and quality control stayed manual by design. Nothing agent-drafted moved without review, because the reporting bar was executive-ready at SVP-level quality.",
     decisions: "No. Agents framed options and drafted materials. Decisions, escalations, and tradeoffs stayed with people, recorded in decision logs with clear ownership across the 800-person organization.",
     automate: "The repeatable busywork first: recurring data pulls, status rollups, research synthesis. Get one measurable win, like the 30% reporting reduction, then scale under governance gates rather than everywhere at once.",
-    tmo: "Case 01, and the one I would reopen first. Fulfillment was the bottleneck: specialists assigned by whoever escalated loudest, allocation failures delaying projects, attrition at 8%, time-to-fill running two months across a 50+ account portfolio. Raul built the Talent Management Office as a 0-to-1 governance framework: defined roles, decision rights, executive scorecards, weekly cadences. Time-to-fill fell to under two weeks, attrition to under 3%, and the framework became the repeatable operating model for the 800-person vertical.",
-    plan: "Case 03, the quiet one that makes the other cases possible. Strategy was sound, but execution was episodic: 50+ concurrent engagements and competing asks from Sales, Finance, Product, Engineering, and HR, with no shared rhythm between the annual plan and monthly work. Raul designed and ran the annual-to-quarterly-to-monthly cadence: operating plans with Finance, portfolio reviews with Sales and Delivery leads, execution checkpoints with ops teams. Targets set, KPIs tracked, gaps flagged, and tradeoffs escalated to the Managing Director with prioritized recommendations. Underneath it, revenue, demand, capacity, and staffing forecast models ran at 98% accuracy behind annual and multi-year investment decisions. The same seat also carried quote-to-contract compliance and pricing governance, with rework down 20%.",
-    ramp: "Case 04, delivered under pressure. An engagement for a global social media platform (kept generic on this page) faced a hard launch deadline, and the delivery team started with zero prior context on the client's stack. Raul led the sourcing, screening, onboarding, and ramping of 100+ specialized QA experts in under two months, with the change management a ramp that size requires. The team was productive inside the launch window.",
+    tmo: "Case 03, and the strongest operational proof point: I do not just advise, I fix broken systems. Fulfillment was the bottleneck: specialists assigned reactively to whoever escalated loudest, allocation failures delaying projects, attrition at 8%, time-to-fill running two months across a 50+ account portfolio serving an 800-person organization. Raul built the Talent Management Office as a 0-to-1 governance framework, run as a defect-reduction program: defined roles, decision rights, executive scorecards, weekly cadences, and a centralized intake process matching specialist skills to project requirements before commitments were made. He monitored utilization and attrition drivers until the model became routine - then ran it until it was boring. Time-to-fill fell to under two weeks, attrition to under 3%, and the framework became the repeatable operating model for the entire vertical.",
+    mna: "Case 02, the commercial one. A major enterprise client ran a fragmented vendor landscape: redundant costs, inconsistent service levels, missed revenue opportunities - and previous consolidation attempts had failed on poor change management and no synergy tracking. Raul led the end-to-end integration as value realization, not contract termination: deep-dive vendor analysis, financial trade-off modeling across pricing, SLAs, and technical capabilities, a phased roadmap with clear ownership across Legal, Procurement, Delivery, and Client Success, post-close governance to track benefits realization, and a business case tying consolidation to margin improvement and client satisfaction. The consolidated portfolio grew revenue 40%, gross margins improved, 50+ enterprise accounts migrated without service disruption, and key delivery talent stayed through the transition. All of it without formal authority over the contributing teams.",
+    plan: "Case 01, the one that sets up every other case. In 2019 the High-Tech vertical realigned under new leadership with a broad strategy: every sub-segment, every offering. Raul designed the annual planning framework for that approach, execution was rigorous, and 2020 still came back flat - resources spread too thin diluted sales effectiveness. Present everywhere, dominant nowhere. For the 2021 cycle he partnered with the Managing Director to pivot from breadth to depth: cross-functional analysis of which ideal client profiles produced profitable, repeatable engagements, an operating plan rebuilt around them, stricter QBR/MBR governance with decision logs that forced explicit trade-offs, and low-margin pursuits exited. Result: double-digit revenue growth in 2021 and 2022 and 30+ new logos, with the same annual-to-quarterly-to-monthly cadence running underneath - 40% faster decisions on critical escalations, 100% visibility into portfolio risks and financials, and 98% forecast accuracy.",
+    ramp: "Not one of the four headline cases, but real work: an engagement for a global social media platform (kept generic on this page) faced a hard launch deadline, and the delivery team started with zero prior context on the client's stack. Raul led the sourcing, screening, onboarding, and ramping of 100+ specialized QA experts in under two months, with the change management a ramp that size requires. The team was productive inside the launch window.",
     path: "Twenty-eight years, one employer, four seats. Raul started in 1998 as a hands-on developer, moved through analyst seats, and became a Technical Lead in 2008, building the SQL and data modeling foundation everything else stands on. In 2014 he moved to program delivery embedded with a global semiconductor company. Since 2016 he has run strategy and business operations for an 800-person organization as chief of staff to the Managing Director. Short version: he did the work the agents now draft.",
     stack: "The tools behind the work: Microsoft Copilot Studio for the custom agents, Power Automate for workflow automation, Power BI and SQL for the numbers, Dynamics 365 on the platform side, Advanced Excel throughout, and the Microsoft 365 suite for everything collaborative. The fundamentals carry more weight: Agile/Scrum, change management, portfolio governance, and operating rhythms like QBRs, MBRs, and decision logs.",
-    cases: "Four builds, all delivered. Case 01: the Talent Management Office, time-to-fill down 75%. Case 02: the custom AI agents, reporting overhead down 30%. Case 03: the annual-to-monthly operating cadence, forecast models at 98% accuracy. Case 04: 100+ specialists mobilized in under two months. Ask me about any of them by name, or by number.",
-    contact: "The human half of this operation is Raul Ramirez. Email and LinkedIn are at the bottom of the page, and the résumé PDF is up in the navigation.",
+    cases: "Four builds, all delivered. Case 01: from flat growth to double-digit expansion, the ICP pivot that landed 30+ new logos. Case 02: the M&A vendor consolidation, 40% revenue growth with 50+ accounts migrated cleanly. Case 03: the Talent Management Office, time-to-fill down 75% and attrition under 3%. Case 04: the AI agent architecture, reporting overhead down 30% and QBR prep from two weeks to three days. Ask me about any of them by name, or by number.",
+    contact: "The human half of this operation is Raul Ramirez. Email and LinkedIn are at the bottom of the page.",
     fallback: "That one is outside my scripted demo. The production agents answered from live portfolio data; this page keeps to a few verified answers. Try one of the suggested questions below the chat."
   };
   var ROUTES = [
     {key: "contact",  words: ["contact", "email", "reach", "resume", "résumé", "linkedin", "call", "phone", "available", "opportunity"]},
-    {key: "tmo",      words: ["talent", "tmo", "attrition", "time-to-fill", "staffing", "recruit", "hiring", "fulfillment"]},
-    {key: "plan",     words: ["planning", "plan", "cadence", "forecast", "roadmap", "kpi", "target", "annual", "governance", "operating", "contract", "pricing", "quote", "msa"]},
+    {key: "mna",      words: ["m&a", "merger", "acquisition", "consolidat", "vendor", "synerg", "integration", "margin", "procurement", "value realization", "sla"]},
+    {key: "tmo",      words: ["talent", "tmo", "attrition", "time-to-fill", "staffing", "recruit", "hiring", "fulfillment", "defect", "intake", "utilization", "allocation", "boring"]},
+    {key: "plan",     words: ["planning", "plan", "cadence", "forecast", "roadmap", "kpi", "target", "annual", "governance", "operating", "rhythm", "chief of staff", "visibility", "icp", "ideal client", "logo", "pivot", "breadth", "depth", "flat growth", "expansion", "realignment", "qbr", "mbr"]},
     {key: "ramp",     words: ["qa", "ramp", "mobiliz", "launch", "onboard", "100", "social media"]},
     {key: "time",     words: ["time", "save", "saved", "hours", "overhead", "30", "efficiency"]},
     {key: "review",   words: ["review", "quality", "check", "audit", "who"]},
@@ -1053,6 +1158,7 @@ footer .foot-lede{color:var(--muted-on-ink);max-width:60ch;margin-bottom:28px;fo
     "Did the AI make the decisions?": "decisions",
     "What would you automate first?": "automate",
     "Tell me about the TMO build": "tmo",
+    "Tell me about the M&A integration": "mna",
     "How does annual planning actually run?": "plan"
   };
 
